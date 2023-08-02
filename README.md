@@ -1,7 +1,7 @@
-## HeartDiseasePrediction
+# HeartDiseasePrediction
 It is an ML project for detecting Heart disease
 
-# Explanation of Dataset:
+## Explanation of Dataset:
 age = age in years
 sex = (1 = male; 0 = female)
 cp = chest pain type
@@ -16,7 +16,7 @@ slope = the slope of the peak exercise ST segment
 ca = number of major vessels (0-3) colored by flourosopy
 thal = thal: 0 = normal; 1 = fixed defect; 2 = reversable defect
 
-# Results:
+## Results:
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -40,7 +40,6 @@ import seaborn as sns
 corrmat = df.corr()
 top_corr_features = corrmat.index
 plt.figure(figsize=(16,16))
-#plot heat map
 g=sns.heatmap(df[top_corr_features].corr(),annot=True,cmap="RdYlGn")
 plt.show()
 <img width="361" alt="4" src="https://github.com/Ayush-Mahariya/HeartDiseasePrediction/assets/83781124/5634048b-897f-42fe-ab5e-bef0fbfaf434">
